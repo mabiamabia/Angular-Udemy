@@ -7,4 +7,6 @@ ng e2e = executa testes unitarios, simula operações de usuario utilizando sist
 ng lint = valida a qualidade do codigo
 ng build --prod = gera diretorio dist, que contem um codigo pronto e otimizado para ir pra produção
 ng new nome_projeto = cria um projeto com angular CLI
-npm i
+npm install = instala nodel_modules
+
+

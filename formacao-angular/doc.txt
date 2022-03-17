@@ -10,4 +10,4 @@ ng new nome_projeto = cria um projeto com angular CLI
 npm install = instala nodel_modules
 ng g module nome_do_modulo = cria novo modulo
 ng g component nome_do_modulo/nome_do_componente = cria novo componente
-
+ng g service nome_do_modulo/services/nome_do_service = cria novo serviço

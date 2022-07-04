@@ -4,8 +4,7 @@ import { Tarefa } from './';
 
 @Injectable()
 export class TarefaService {
-
-  constructor() { }
+  constructor() {}
 
   listarTodos(): Tarefa[] {
     const tarefas = localStorage['tarefas'];
@@ -19,10 +18,10 @@ export class TarefaService {
     localStorage['tarefas'] = JSON.stringify(tarefas);
   }
 
-  buscarPorId(id: number): Tarefa {
+/*   buscarPorId(id: number): Tarefa{
     const tarefas: Tarefa[] = this.listarTodos();
-    return tarefas.find(tarefa => tarefa.id === id);
-  }
+    return tarefas.find((tarefa) => tarefa.id === id);
+  } */
 
   atualizar(tarefa: Tarefa): void {
     const tarefas: Tarefa[] = this.listarTodos();
@@ -36,7 +35,7 @@ export class TarefaService {
 
   remover(id: number): void {
     let tarefas: Tarefa[] = this.listarTodos();
-    tarefas = tarefas.filter(tarefa => tarefa.id !== id);
+    tarefas = tarefas.filter((tarefa) => tarefa.id !== id);
     localStorage['tarefas'] = JSON.stringify(tarefas);
   }
 
@@ -49,5 +48,4 @@ export class TarefaService {
     });
     localStorage['tarefas'] = JSON.stringify(tarefas);
   }
-
 }
